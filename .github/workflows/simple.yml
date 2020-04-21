@@ -19,10 +19,12 @@ jobs:
         shell: python
   run-windows-command:
     runs-on: windows-latest
+    # Using "needs" key so bottom step runs after top completes
+    needs: ["run-shell-command"]
     steps:
       - name: Directory Powershell
         run: Get-Location
       - name: Directory Bash
         run: pwd
         shell: bash
-      
+    
