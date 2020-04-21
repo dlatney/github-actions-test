@@ -1,0 +1,16 @@
+{
+  "name": "Dean",
+  "age": 28,
+  "active": true,
+  "key": {
+    "key": "value",
+    "key2": 33
+  },
+  "array": [
+    "item1",
+    "item2",
+    {
+      "key": "value"
+    }
+  ]
+}
