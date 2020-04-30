@@ -1,9 +1,14 @@
 name: Actions Workflow
 
 on: 
-  push:
+  #schedule:
+  # cron "*minutes* *hours* *dayofmonth* *month* *dayofweek*" crontab.guru
+  #  - cron: ""
+  # push:
   pull_request:
     types: [closed, assigned, opened, reopened]
+  repository_dispatch: 
+    types: [build]
 
 jobs:
   run-github-actions:
