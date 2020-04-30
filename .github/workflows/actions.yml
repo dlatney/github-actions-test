@@ -1,6 +1,12 @@
 name: Actions Workflow
 
 on: 
+  push:
+    branches:
+      - master
+      - 'feature/*'
+    tags:
+      - v1.*
   #schedule:
   # cron "*minutes* *hours* *dayofmonth* *month* *dayofweek*" crontab.guru
   #  - cron: ""
